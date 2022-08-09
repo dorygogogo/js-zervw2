@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Form</h1>
+    <form>
+      <label for="firstNameInput">First Name</label>
+      <input
+        type="text"
+        name="firstName123"
+        id="firstNameInput"
+        required
+        minlength="5"
+        maxlength="10"
+      />
+      <br />
+      <label for="lastNameInput">Last Name</label>
+      <input type="text" name="lastName" id="lastNameInput" />
+      <br />
+      <label for="ageInput">Age</label>
+      <input type="number" name="age" id="ageInput" min="0" max="100" />
+      <br />
+      <label for="emailInput">Email</label>
+      <input type="email" name="email" id="emailInput" />
+      <br />
+
+      <label for="passwordInput">Password</label>
+      <input type="password" name="password" id="passwordInput" />
+      <br />
+      <label for="dob">DOB</label>
+      <input type="date" name="dob" id="dob" />
+
+      <br />
+      <label for="city">City</label>
+      <select id="city">
+        <option value="beijing">Beijing</option>
+        <option value="shanghai">Shanghai</option>
+        <option value="chengdu">Chengdu</option>
+      </select>
+
+      <br />
+      <label>Gender</label>
+      <label>Male</label>
+      <input type="radio" name="gender" value="male" />
+
+      <label>Female</label>
+      <input type="radio" name="gender" value="female" />
+      <br />
+      <label>Pets</label>
+      <label>Dog</label>
+      <input type="checkbox" name="pets" value="dog" />
+      <label>Cat</label>
+      <input type="checkbox" name="pets" value="cat" />
+      <label>pig</label>
+      <input type="checkbox" name="pets" value="pig" />
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+.box {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  border: 5px solid blue;
+}
+
+.position-container {
+  background-color: green;
+  border: 5px dashed brown;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+
+.second-box {
+  /* set position property to convert element to a positioned element*/
+
+  /* position: relative; */
+  /* relative to its original position*/
+
+  /* position: absolute; */
+  /* relative to its closest positioned element*/
+
+  position: fixed;
+  /* relative to viewport*/
+
+  top: 10px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 0;
+}
+
+.noti-btn {
+  padding: 8px 32px;
+  position: relative;
+}
+
+.noti-btn-badge {
+  position: absolute;
+  background-color: red;
+  width: 15px;
+  top: -15px;
+  right: -15px;
+  padding: 5px;
+  border-radius: 50%;
+}

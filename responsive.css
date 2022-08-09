@@ -1,0 +1,27 @@
+.box {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  border: 5px solid blue;
+}
+
+.container {
+  background-color: green;
+  border: 5px dashed brown;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+
+/* query meida */
+@media screen and (max-width: 718px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .box:nth-child(2) {
+    display: none;
+  }
+}

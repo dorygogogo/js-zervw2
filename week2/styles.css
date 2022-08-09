@@ -1,0 +1,107 @@
+/*
+  selector {
+    property1: value;
+    property2: value;
+  }
+*/
+
+html {
+  font-size: 32px;
+}
+
+/* select by tag name */
+h1 {
+  color: blue;
+  font-size: 65px;
+  border: 5px solid red;
+  padding: 16px 32px 64px 8px;
+  /* padding: 32px 16px; two value short hand*/
+  /* padding: 16px; */
+  /* padding-top: 8px; */
+  margin: 24px;
+  background-color: green;
+}
+
+h2 {
+  color: darkcyan;
+}
+
+/* select by id */
+#paragraph {
+  font-size: 32px;
+}
+
+/* select by class name */
+.text-green {
+  color: green;
+}
+
+.brown-background {
+  background-color: brown;
+}
+
+/* select by child classame, via space */
+.outter-container .container .container-text {
+  color: chocolate;
+}
+
+/* select the element has all the classes */
+.text-green.brown-background.yellow-border {
+  font-size: 64px;
+}
+
+/* select all the elements separeted by comma */
+.yellow-green,
+.green-yellow {
+  background-color: yellowgreen;
+}
+
+.btn {
+  padding: 8px 16px;
+  background-color: pink;
+  color: white;
+  border: 1px solid pink;
+}
+
+.btn:hover {
+  background-color: white;
+  color: pink;
+}
+
+.list-container .list-item:first-child {
+  color: blueviolet;
+}
+
+.list-container .list-item:last-child {
+  color: red;
+}
+
+.list-container .list-item:nth-child(3) {
+  color: palevioletred;
+}
+
+.list-container .list-item:nth-child(even) {
+  background-color: grey;
+}
+
+.list-container .list-item:nth-child(odd) {
+  /* background-color: rgb(165, 42, 42); */
+  /* background-color: #A52A2A; */
+  background-color: brown;
+}
+
+.box {
+  background-color: red;
+  height: 100px;
+  width: 100px; /*unit pixel*/
+  /* width: 50%; percentage*/
+  /* width: 10em; relative to parent element's font size */
+  /* width: 10rem; relative to root element(html)'s font size */
+  /*width: 50vw relative to view port width*/
+  /* height: 100vh relative to view port height; */
+}
+
+.parent-box {
+  width: 200px;
+  font-size: 8px;
+}
